@@ -1,0 +1,140 @@
+color: red
+fieldLayouts:
+  d0c12a68-fbec-477e-bd18-ec7a9546b36e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a0f16550-186c-404a-b9da-f4e9e624a85b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a0ca3ac9-b2a3-47de-b21b-4d89e4eb5db5 # Bovenste Titels 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0e8195c-4525-4b10-b897-3fd048c2ff72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da1db8d0-3e0c-4772-a6b0-19b7c1ae2b1d # Text evenement
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82e153f5-6437-4e4b-b73b-b5b5206158d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8ad3631c-f462-49da-8aa9-86f72e9950d1 # Knop text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 786f1b02-2a35-471e-8334-7bd7af646d8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e0e05ed4-b1f3-433b-b271-7acef540b745 # Recent evenement
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af953af5-8356-4abf-882c-cba82eaa31f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fb475c95-4a0f-4199-9d19-b88c9f747571 # Onderste titels
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71828bfd-3762-4fab-8f2e-01396de7dc26
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de41708c-ab65-4b8a-991c-4dda98dcdede # Afgelopen evenementen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56af3e19-ef49-4852-81f4-781f5a2aa3e1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: a5531139-716f-4bf6-bf32-39819c61e836
+        userCondition: null
+handle: evenementen
+hasTitleField: true
+icon: files
+name: Evenementen
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

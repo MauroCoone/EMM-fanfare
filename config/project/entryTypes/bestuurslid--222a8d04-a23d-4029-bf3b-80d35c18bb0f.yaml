@@ -1,0 +1,80 @@
+color: blue
+fieldLayouts:
+  ae8b50e9-c980-4828-b8d5-2990ba57595e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1f753987-9fd7-4732-9a2e-52a99d85c367
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a6314a77-2f3a-4658-9c56-690f7c8e0967 # Bestuurslid foto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ceb52641-7459-4230-92a0-94f56b1be2b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a8a462b8-0154-404c-a718-fa2a7b9aabf1 # Functie en instrument
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 678ccb12-ce36-45ae-92e6-a7f2f7b74097
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 72e00054-80c2-4a08-9a03-4b47fdafdc9f
+        userCondition: null
+handle: bestuurslid
+hasTitleField: true
+icon: person
+name: Bestuurslid
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

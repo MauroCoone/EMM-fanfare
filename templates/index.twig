@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>{{ siteName }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="description" content="{{descriptionwebsite.descriptionwebsite | raw}}">
+    <link rel="icon" href="{{logo.logo.one().url}}" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin="anonymous"
+        src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign%2CIntersectionObserver"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+</head>
+{% set cursorQuery = craft.entries().section('cursor') %}
+{% set cursor = cursorQuery.one() %}
+{% set home = craft.entries().section('homepagina')%}
+<body>
+    {% include 'partials/navigation.twig' %}
+    <main>
+        {% for home in home %} 
+            {% include 'components/homepage/hero.twig' %}
+            {% include 'components/homepage/quote.twig' %}
+            {% include 'components/homepage/history.twig' %}
+            {% include 'components/homepage/cards.twig' %}
+        {% endfor %}
+            {% include 'components/homepage/carousel.twig'%}
+    </main>
+    {% include 'partials/footer.twig' %}
+    
+</body>
+<script type="module" src="/assets/js/animations/fade-in.js"></script>
+<script src="/assets/js/lozad.js"></script>
+<script src="/assets/js/navigation.js"></script>
+</html>

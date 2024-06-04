@@ -1,0 +1,80 @@
+color: pink
+fieldLayouts:
+  2ea18fa3-7804-4de5-97a0-6986fa0533cf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a50d6467-7d4b-4540-becf-e6dc1c209b89
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d746d420-d41d-489a-b942-2ef796268c28 # Muzikanten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af1ebc6a-2469-45ab-b913-198a84c4d328
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c88aa507-637d-4c7e-b148-18811b748966 # Cursor image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a392166-2cb7-4b6b-ad4e-d3c8e36ccf17
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 5318b302-188f-4ceb-8979-5cd819b10e12
+        userCondition: null
+handle: instrumentgroep
+hasTitleField: true
+icon: ''
+name: 'Instrument groep'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

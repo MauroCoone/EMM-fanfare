@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 88ac16c0-76ee-4619-8421-245fb477826c # Socials
+handle: socials
+maxAuthors: 1
+name: Socials
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  837e69ec-52da-4cbb-9013-dd888efcd6e3: # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    enabledByDefault: true
+    hasUrls: true
+    template: socials/_entry
+    uriFormat: 'socials/{slug}'
+type: channel

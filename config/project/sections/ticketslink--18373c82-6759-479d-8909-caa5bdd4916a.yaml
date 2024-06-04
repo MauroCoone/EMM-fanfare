@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8e079820-d401-4c5b-a8eb-0e689b4b32c6 # tickets
+handle: ticketslink
+maxAuthors: 1
+name: 'Tickets link'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  837e69ec-52da-4cbb-9013-dd888efcd6e3: # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    enabledByDefault: true
+    hasUrls: true
+    template: tickets-link/_entry
+    uriFormat: tickets-link
+type: single

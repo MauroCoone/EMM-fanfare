@@ -1,0 +1,52 @@
+{% set page = page ?? 1 %}
+{% set entryLimit = 5 %} {# Define the limit for entries per page #}
+{% set entryQuery = craft.entries.section("paginas").limit(entryLimit) %}
+
+{% set pageInfo = sprig.paginate(entryQuery, page) %}
+{% set entries = pageInfo.pageResults %}
+
+
+
+{% for entry in entries %}
+    {% set images = entry.afbeeldingen %}
+    {% if images | length %}
+        {% set imagePage = craft.app.request.getQueryParam('imagePage' ~ entry.id, 1) %}
+        {% set imageLimit = 4 %} {# Define the limit for images per page #}
+        
+        {% set totalImages = images | length %}
+        {% set totalImagePages = (totalImages / imageLimit) | round(0, 'ceil') %}
+        {% set start = (imagePage - 1) * imageLimit %}
+        {% set end = start + imageLimit %}
+        
+        {% set paginatedImages = images[start:end] %}
+
+        <section class="max-w-[80%] mx-auto">
+            <div class="mt-[3rem] grid grid-cols-4 gap-4">
+                {% for image in paginatedImages %}
+                    <img class="w-full" src="{{ image.url }}" alt="{{ image.title }}">
+                {% endfor %}
+            </div>
+            <div class="pagination">
+                {% if imagePage > 1 %}
+                    <a href="?page={{ page }}&imagePage{{ entry.id }}={{ imagePage - 1 }}">Previous</a>
+                {% endif %}
+                
+                {% if imagePage < totalImagePages %}
+                    <a href="?page={{ page }}&imagePage{{ entry.id }}={{ imagePage + 1 }}">Next</a>
+                {% endif %}
+            </div>
+        </section>
+        
+    {% endif %}
+{% endfor %}
+
+{# Render entry pagination controls #}
+<div class="pagination">
+    {% if pageInfo.currentPage > 1 %}
+        <a href="?page={{ pageInfo.currentPage - 1 }}">Previous</a>
+    {% endif %}
+
+    {% if pageInfo.currentPage < pageInfo.totalPages %}
+        <a href="?page={{ pageInfo.currentPage + 1 }}">Next</a>
+    {% endif %}
+</div>

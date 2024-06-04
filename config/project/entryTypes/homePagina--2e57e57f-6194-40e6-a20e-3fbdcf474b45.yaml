@@ -1,0 +1,185 @@
+color: red
+fieldLayouts:
+  6a02cc4b-407a-439a-b178-7375bcfa88d2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b89fb22e-6b6c-4be0-a9d2-694b0f9e9c08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9d612026-666a-4011-8fd9-d8ce7f7cfa43 # Achtergrond
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4ea47ba-ffa9-4675-9ea7-9c32a32665e7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e0e05ed4-b1f3-433b-b271-7acef540b745 # Recent evenement
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ba71038-6ec9-4cbc-a9ca-4394917cda49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6bb39f78-323a-4bd1-be86-6fbc10c3a306
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49431ac2-e1e8-482e-8ec5-0a00c2760930
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7896984-6562-48f9-b926-54bcf7006ea4 # Intro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a481ead1-3d4b-4a43-8249-9dbc1c36f142
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5c05e358-3fa8-4863-a796-06363c287a1f # Quote
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 601065a8-2e4c-4f2f-99c5-093684b79bb5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 548882c7-bab2-46dd-a368-a9fe271ae2d5 # Geschiedenis foto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a93a824-6db1-46dd-ac73-8365480e5ddb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1cd5fb98-c27f-4926-96b3-eba8227130b9 # Geschiedenis Tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a91090bb-55e3-4d92-a49d-66bdb537c3d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 65965204-18bf-4aa0-ae69-9550b0324995 # Kaarten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d3de0b0-f1b4-4050-836d-aefd926a41d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fe27a832-4585-45a3-812b-038d4360eb80 # Images Carousel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63aff272-443d-4ce3-95ee-aa895661cc0e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: cbff51b9-a4aa-434f-a9bd-b9675aac5e5d
+        userCondition: null
+handle: homePagina
+hasTitleField: false
+icon: house
+name: 'Home pagina'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

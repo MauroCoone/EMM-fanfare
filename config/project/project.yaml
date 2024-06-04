@@ -1,0 +1,109 @@
+dateModified: 1717406852
+email:
+  fromEmail: info@emmlot.be
+  fromName: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: /var/www/html/web/uploads
+    type: craft\fs\Local
+    url: /uploads
+meta:
+  __names__:
+    0c631ed3-4885-41d0-a91f-4379856ef8c7: Evenementen # Evenementen
+    1a28d632-b3db-4a2f-813b-6c5f8aa4de42: Afbeeldingen # Afbeeldingen
+    1cd5fb98-c27f-4926-96b3-eba8227130b9: 'Geschiedenis Tekst' # Geschiedenis Tekst
+    1f06ee27-e8d7-41fa-9c6c-dee286b3a8fe: Galerij # Galerij
+    1f40e2af-35f1-4347-b0cc-76b1bf9025e8: 'Ticket url' # Ticket url
+    1fad2296-4707-43bb-bb7c-58336c02c63d: Instrument # Instrument
+    2ada7a0c-3e85-4608-8e11-28e353489ae3: images # images
+    02b461f2-e8ca-435d-8238-0a16aa815b5e: Simple # Simple
+    2e57e57f-6194-40e6-a20e-3fbdcf474b45: 'Home pagina' # Home pagina
+    02f0e2d5-c5c6-40a2-8422-aca3efb2276e: Logo # Logo
+    3afb104a-9bd9-4bfa-b1c8-32d92e0d298b: 'Description Website' # Description Website
+    3dd5823f-33e4-46ce-854a-fbe4ee567aa9: Naam # Naam
+    4adf9fc9-90d9-4ab1-b47a-590854d4e4b8: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot' # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    4e63f225-74b6-449d-925a-742eea5b4b8f: 'Card Text' # Card Text
+    5c05e358-3fa8-4863-a796-06363c287a1f: Quote # Quote
+    6db965dc-bfb5-47a1-b3ad-e70d24d5cf62: 'Linken naar' # Linken naar
+    7a1e0479-584e-4569-b42b-191582242461: 'Bestuur tekst' # Bestuur tekst
+    8a37f41a-8cf0-4c22-a565-98b3f9efc5aa: 'Footer tekst 2' # Footer tekst 2
+    8ad3631c-f462-49da-8aa9-86f72e9950d1: 'Knop text' # Knop text
+    8e079820-d401-4c5b-a8eb-0e689b4b32c6: tickets # tickets
+    9d612026-666a-4011-8fd9-d8ce7f7cfa43: Achtergrond # Achtergrond
+    9f26738d-9410-4421-914c-164677f26d79: Socials # Socials
+    33bfc5d4-013d-400e-a3cd-89ca0c0b689a: Contact # Contact
+    88ac16c0-76ee-4619-8421-245fb477826c: Socials # Socials
+    90c075c4-e914-4ea5-b975-317ccc5e84c2: 'Banner image' # Banner image
+    222a8d04-a23d-4029-bf3b-80d35c18bb0f: Bestuurslid # Bestuurslid
+    837e69ec-52da-4cbb-9013-dd888efcd6e3: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot' # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    3645e0f1-7149-4035-a3db-cb86fab2c6cc: Paginas # Paginas
+    4798bc58-f677-4549-b35d-f1a7fee8deba: 'Footer tekst' # Footer tekst
+    18373c82-6759-479d-8909-caa5bdd4916a: 'Tickets link' # Tickets link
+    53257de7-969b-402f-9802-1570284a1b8b: Bestuursleden # Bestuursleden
+    99240c53-fb69-434f-9c5e-f453580c417b: 'Description Website' # Description Website
+    548882c7-bab2-46dd-a368-a9fe271ae2d5: 'Geschiedenis foto' # Geschiedenis foto
+    06595393-c285-47be-9059-df3d3443ae71: 'Instrument groep' # Instrument groep
+    6838257d-f1be-4bda-9721-236d5923feda: Bezetting # Bezetting
+    07821920-21c4-4bfa-b533-f45da412d58e: Paginas # Paginas
+    41782573-42d1-4823-ba88-37fecb7a65bf: 'Dirigent tekst' # Dirigent tekst
+    65965204-18bf-4aa0-ae69-9550b0324995: Kaarten # Kaarten
+    a0ca3ac9-b2a3-47de-b21b-4d89e4eb5db5: 'Bovenste Titels ' # Bovenste Titels 
+    a8a462b8-0154-404c-a718-fa2a7b9aabf1: 'Functie en instrument' # Functie en instrument
+    a538afc2-d482-4266-9443-24af339ce56a: 'Description Website' # Description Website
+    a6314a77-2f3a-4658-9c56-690f7c8e0967: 'Bestuurslid foto' # Bestuurslid foto
+    a138341f-504d-4ea1-bdab-095eb8cf3d0e: 'Dirigent image' # Dirigent image
+    aa668fda-6672-4ed8-a859-402420cf46ba: Geschiedenis # Geschiedenis
+    b938d7f2-ac2b-49f5-8724-1a02a9076082: 'Afgelopen evenement image' # Afgelopen evenement image
+    b6926996-153e-418e-acfe-4c395d96767a: footer # footer
+    bf48323a-65f1-4525-b819-f8291368811f: 'Afgelopen evenementen' # Afgelopen evenementen
+    c76b8343-2746-463c-9d98-e38c51c2b9f7: Logo # Logo
+    c88aa507-637d-4c7e-b148-18811b748966: 'Cursor image' # Cursor image
+    caf76a92-871e-492f-ac7d-4946d0f7fb35: 'Contact titel' # Contact titel
+    d51ade79-15c6-469e-897e-e40067da42dd: 'Kaarten homepagina' # Kaarten homepagina
+    d746d420-d41d-489a-b942-2ef796268c28: Muzikanten # Muzikanten
+    d5676078-a97f-487b-a3a1-b6e21e63d9f9: 'Social icon' # Social icon
+    da1db8d0-3e0c-4772-a6b0-19b7c1ae2b1d: 'Text evenement' # Text evenement
+    de41708c-ab65-4b8a-991c-4dda98dcdede: 'Afgelopen evenementen' # Afgelopen evenementen
+    e0e05ed4-b1f3-433b-b271-7acef540b745: 'Recent evenement' # Recent evenement
+    e5baded0-d2a2-4ca2-a089-f1097b3056aa: Bezetting # Bezetting
+    ebd64a95-a672-4ceb-8d72-628aac700086: Logo # Logo
+    eee71030-ea87-44f5-a5d6-9e9e3c88a830: footer # footer
+    ef83e8ca-673a-4d40-9677-fdb0e9157a18: Orkest # Orkest
+    f0fa2e1e-f15d-4d67-b946-e737c125f4da: 'Home pagina' # Home pagina
+    f7896984-6562-48f9-b926-54bcf7006ea4: Intro # Intro
+    fb475c95-4a0f-4199-9d19-b88c9f747571: 'Onderste titels' # Onderste titels
+    fe27a832-4585-45a3-812b-038d4360eb80: 'Images Carousel' # Images Carousel
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  freeform:
+    edition: express
+    enabled: true
+    schemaVersion: 5.1.0
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot'
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

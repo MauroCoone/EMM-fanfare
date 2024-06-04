@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  9b6d0ff3-1f2b-4a94-a24a-05f13da6d856:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0516fa78-1963-4a1f-bea2-7215a1542afc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b938d7f2-ac2b-49f5-8724-1a02a9076082 # Afgelopen evenement image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6aa7e30-4777-419d-b6d4-c91f3272f45d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da1db8d0-3e0c-4772-a6b0-19b7c1ae2b1d # Text evenement
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 898577fb-a3f9-4df7-9922-724d07ec49a0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 98cb6765-c92f-4674-99f1-bca24e397db4
+        userCondition: null
+handle: afgelopenevenementen
+hasTitleField: true
+icon: calendar
+name: 'Afgelopen evenementen'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: nl
+name: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot'
+primary: true
+siteGroup: 4adf9fc9-90d9-4ab1-b47a-590854d4e4b8 # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+sortOrder: 1

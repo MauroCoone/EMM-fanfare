@@ -1,0 +1,65 @@
+color: red
+fieldLayouts:
+  98597005-a96a-436b-8524-f30e55d2d702:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7d6237b8-47c9-4a14-8bf1-97799a964d84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c075c4-e914-4ea5-b975-317ccc5e84c2 # Banner image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cba83db-bc2e-4d58-a290-99fedf05e0b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: e37902f6-4d85-4f51-a099-60ea37f38c63
+        userCondition: null
+handle: geschiedenis
+hasTitleField: true
+icon: files
+name: Geschiedenis
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

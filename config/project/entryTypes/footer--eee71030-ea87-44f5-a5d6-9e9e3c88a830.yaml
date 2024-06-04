@@ -1,0 +1,80 @@
+color: amber
+fieldLayouts:
+  cfee89d0-4825-4d82-a049-2f656bfba00b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: da3be179-d411-4000-8609-480ce6333243
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4798bc58-f677-4549-b35d-f1a7fee8deba # Footer tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7dbeca9a-db31-4e0d-b3cc-08bd6cde2f42
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a37f41a-8cf0-4c22-a565-98b3f9efc5aa # Footer tekst 2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27aa1d47-b334-4d39-b6cd-ba3e292eb470
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 175c2236-0f52-4869-b301-9a6d9313c4ad
+        userCondition: null
+handle: footer
+hasTitleField: false
+icon: ''
+name: footer
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Footer
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

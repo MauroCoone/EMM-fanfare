@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - eee71030-ea87-44f5-a5d6-9e9e3c88a830 # footer
+handle: footer
+maxAuthors: 1
+name: footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  837e69ec-52da-4cbb-9013-dd888efcd6e3: # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

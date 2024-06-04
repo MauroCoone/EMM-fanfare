@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 2e57e57f-6194-40e6-a20e-3fbdcf474b45 # Home pagina
+handle: homepagina
+maxAuthors: 1
+name: 'Home pagina'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  837e69ec-52da-4cbb-9013-dd888efcd6e3: # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

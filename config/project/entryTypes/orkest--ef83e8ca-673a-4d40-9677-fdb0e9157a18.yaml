@@ -1,0 +1,140 @@
+color: red
+fieldLayouts:
+  41276d58-9a67-421b-a1fa-54309a5529a2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f57bfb39-1fc6-4e05-9e3a-eb0836195191
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5baded0-d2a2-4ca2-a089-f1097b3056aa # Bezetting
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d1dfb1c6-0706-4fe1-b5e0-7d6067a60c9e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c075c4-e914-4ea5-b975-317ccc5e84c2 # Banner image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a87b9ff7-38c2-4e84-b72d-f01ee2702dc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a138341f-504d-4ea1-bdab-095eb8cf3d0e # Dirigent image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0aa57240-de59-4569-bc4f-55b2d8b24bb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41782573-42d1-4823-ba88-37fecb7a65bf # Dirigent tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72ea5a90-88a5-4883-9290-cf75d48492bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7a1e0479-584e-4569-b42b-191582242461 # Bestuur tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7149097-3b49-4ddd-a788-6f9d1d81a8cd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 53257de7-969b-402f-9802-1570284a1b8b # Bestuursleden
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e521b2d-43dd-41a1-a790-dfcdfd2d77f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: f4f6b923-9868-48a9-ad8a-8816ad763cc9
+        userCondition: null
+handle: orkest
+hasTitleField: true
+icon: files
+name: Orkest
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

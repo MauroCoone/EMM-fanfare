@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: afgelopenevenementen
+instructions: null
+name: 'Afgelopen evenementen'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - bf48323a-65f1-4525-b819-f8291368811f # Afgelopen evenementen
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

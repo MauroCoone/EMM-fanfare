@@ -1,0 +1,90 @@
+{% set logoQuery = craft.entries().section('logo') %}
+{% set logo = logoQuery.one() %}
+{% set ticketQuery = craft.entries().section('ticketslink') %}
+{% set ticket = ticketQuery.one() %}
+{% set socialsQuery = craft.entries().section('socials') %}
+{% set socials = socialsQuery.all() %}
+
+{% set pagesQuery = craft.entries({
+section: 'paginas',
+level: 1,
+}) %}
+{% set pages = pagesQuery.all() %}
+
+<div class="w-full">
+    <div class="bg-[#797D17] py-2 md:py-4">
+        <ul class="flex justify-between max-w-[90%] md:max-w-[80%] mx-auto">
+            <p class="text-white text-xs md:text-base">{{siteName}}</p>
+            <div class="flex gap-4">
+                {% for social in socials %}
+                <div>
+                    <a target="_blank" href="{{social.linkto}}"><img class="w-6" src="{{social.socialicon.one().url}}"
+                            alt=""></a>
+                </div>
+                {% endfor %}
+            </div>
+        </ul>
+    </div>
+    <div id="navigationBar" class="fixed w-full top-0 mt-[7vh]">
+        <div class="progress-container hidden lg:block">
+            <div id="progress-bar"></div>
+        </div>
+        <div class="bg-white flex flex-row-reverse md:flex-row items-center w-[90%] md:w-[80%] mx-auto justify-between md:stickyBar">
+            <div class="lg:hidden">
+                <!-- Hamburger Icon for Mobile -->
+                <button id="mobileMenuButton" class="text-gray-800 focus:outline-none"
+                    aria-label="Hamburger Navigation">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="md:flex items-center gap-20 md:max-w-[90%] py-4">
+                <!-- Logo -->
+                <a href="{{ siteUrl }}" class="flex-shrink-0">
+                    <img class="w-20" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
+                </a>
+                <!-- Left Navigation -->
+                <ul class="md:flex items-center space-x-16 pageitems hidden md:block">
+                    {% for page in pages %}
+                    <li><a href="{{ page.url }}" class="">{{ page.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
+            </nav>
+        </div>
+        
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileMenu" class="md:hidden fixed top-0 left-0 w-full h-full bg-white z-[1001] hidden">
+        <button id="mobileMenuCloseButton" class="absolute top-4 right-4 text-gray-800 focus:outline-none">
+            <!-- Close Icon (you can customize this) -->
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="flex flex-col gap-4 items-center justify-center h-full text-center">
+            <a href="{{ siteUrl }}" class="flex-shrink-0 ml-[1rem]">
+                <img class="w-20" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
+            </a>
+            {% for page in pages %}
+                <li class="{{ page.title }} uppercase mb-4">
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                    {% set subpages = page.getChildren() %}
+                    {% if subpages|length %}
+                        <!-- Dropdown for Subpages (adjust styling as needed) -->
+                        <ul class="capitalize">
+                            {% for subpage in subpages %}
+                                <li><a href="{{ subpage.url }}">{{ subpage.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            <a href="{{ticket.ticketurl}}"><button class="button">Koop hier tickets</button></a>
+        </ul>
+    </div>
+
+</div>

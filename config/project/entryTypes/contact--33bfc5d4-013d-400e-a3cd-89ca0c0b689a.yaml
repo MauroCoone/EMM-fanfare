@@ -1,0 +1,80 @@
+color: red
+fieldLayouts:
+  60b51cc8-d309-412c-9314-43e5dbdc57d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cf74567f-5274-4440-a33f-a8a0f884cb24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: caf76a92-871e-492f-ac7d-4946d0f7fb35 # Contact titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5ad07e4-3e8f-4617-a945-0f9d07916d7f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ba6fe09a-117b-4950-9580-0bf757b226b9
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9565be4d-6351-4f25-acc5-7a31a8c7725f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 35c1b628-0e1b-4f36-9448-c24cee7303f1
+        userCondition: null
+handle: contact
+hasTitleField: false
+icon: files
+name: Contact
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Contact
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

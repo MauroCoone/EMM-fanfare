@@ -1,0 +1,65 @@
+color: purple
+fieldLayouts:
+  802f0227-dc04-44ed-8ba8-4d12374cfd1e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 53c8c4e2-b012-44d3-8e19-883c02a10403
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ebd64a95-a672-4ceb-8d72-628aac700086 # Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e399f677-fd5b-4244-a08f-9a23afda2763
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: ab5e4b70-1455-4e90-82e8-db0ca50f37cd
+        userCondition: null
+handle: logo
+hasTitleField: false
+icon: image
+name: Logo
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3645e0f1-7149-4035-a3db-cb86fab2c6cc # Paginas
+  - 0c631ed3-4885-41d0-a91f-4379856ef8c7 # Evenementen
+  - ef83e8ca-673a-4d40-9677-fdb0e9157a18 # Orkest
+  - aa668fda-6672-4ed8-a859-402420cf46ba # Geschiedenis
+  - 1f06ee27-e8d7-41fa-9c6c-dee286b3a8fe # Galerij
+  - 33bfc5d4-013d-400e-a3cd-89ca0c0b689a # Contact
+handle: paginas
+maxAuthors: 1
+name: Paginas
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  837e69ec-52da-4cbb-9013-dd888efcd6e3: # Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 4a0f4c5a-9aa9-4255-803a-9a8ea67b9044
+type: structure

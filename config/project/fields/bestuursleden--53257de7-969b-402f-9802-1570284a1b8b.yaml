@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: bestuursleden
+instructions: null
+name: Bestuursleden
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 222a8d04-a23d-4029-bf3b-80d35c18bb0f # Bestuurslid
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

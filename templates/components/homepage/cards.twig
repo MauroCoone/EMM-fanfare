@@ -1,0 +1,14 @@
+<section class="h-[200vh] md:h-auto">
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 h-full">
+        {% for block in home.cards %}
+                <li class="relative">
+                    <a href="{{block.linkto}}" class="block lg:absolute inset-0 bg-cover bg-center h-[80vh] lg:h-[70vh] xl:h-[80vh] 3xl:h-[70vh] front lozad2"
+                        data-background-image="{{ block.background.one().url }}" style="z-index: 2;">
+                        <div class="absolute inset-0 bg-black opacity-40 overlay"></div>
+                        <h2 class="absolute left-1/2 transform -translate-x-1/2 w-[80%] mx-auto top-20 text-white text-3xl">{{block.title}}</h2>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-[80%] mx-auto bottom-20 text-white">{{block.cardtext}}</div>
+                    </a>
+                </li>
+    {% endfor %}
+    </ul>
+</section>

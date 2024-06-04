@@ -1,0 +1,65 @@
+color: purple
+fieldLayouts:
+  bab29829-3331-4ccd-a11e-85cc36e43155:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e27f330a-9d6d-4e62-9f7a-4b81206faf50
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1f40e2af-35f1-4347-b0cc-76b1bf9025e8 # Ticket url
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2906f39c-8e17-416b-8863-2e4e4425c61f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 356cbe29-2005-465f-a616-409abb8d0187
+        userCondition: null
+handle: tickets
+hasTitleField: false
+icon: ticket
+name: tickets
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Tickets link'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,58 @@
+<div class="mt-[4rem]">
+    {% include 'components/pages/components/header'%}
+</div>
+<main class="{{entry.title}}">
+    <section>
+        <div id="bezetting" class="w-[80%] mx-auto py-[4rem]">
+            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Bezetting</h1>
+            <div class="grid grid-cols-6">
+                {% for muziekgroup in entry.bezetting %}
+                    <div style="cursor: url('{{ muziekgroup.cursorimage.one().url }}'), auto;">
+                        <h3>{{ muziekgroup.title }}</h3>
+                        {{ muziekgroup.muzikanten | markdown }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    
+        <div id="jeugd" class="w-[80%] mx-auto py-[4rem]">
+            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Jeugdopleiding</h1>
+        </div>
+    
+        <div id="dirigent" class="grid dirigent">
+            <div class="bg-cover bg-left lozad2" data-background-image="{{ entry.dirigentimage.one().url }}"></div>
+
+            <div class="bg-[#8f8d77] relative overflow-x-hidden dirigenttekst p-32">
+                <svg class="absolute top-0 right-[-1px] w-[25%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+                    <defs>
+                        <style>
+                        .cls-1 { fill: #fff; stroke-width: 0px; }
+                        </style>
+                    </defs>
+                    <g id="Calque_1">
+                        <path class="cls-1" d="M346,0S320.43,235.55,0,267.13C-.67,176.76,229.67.33,346,0Z" style="fill: #ffffff;"/>
+                        <polyline class="cls-1" points="4 0 346.25 0 0 267.13 0 0" style="fill: #ffffff;"/>
+                    </g>
+                </svg>
+                {{entry.dirigenttekst | markdown}}
+            </div>
+        </div>
+    
+        <div id="bestuur"  class="w-[80%] mx-auto py-[4rem]">
+            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Bestuur</h1>
+            <div class="w-[65%]">
+                {{entry.bestuurTekst | markdown}}
+            </div>
+            <div class="bestuursleden mt-[2rem]">
+                {% for lid in entry.bestuursleden %}
+                    <div class="bestuur-card inset-0 bg-cover bg-center lozad2" data-background-image="{{ lid.bestuurslidfoto.one().url }}" style="z-index: 2;">
+                        <div>
+                            <h2 class="font-bold">{{lid.title}}</h2>
+                            <p class="text-[18px]">{{lid.functieeninstrument}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,30 @@
+{% set socialsQuery = craft.entries().section('socials') %}
+{% set socials = socialsQuery.all() %}
+
+<footer class="">
+    <div class="bg-[#292c07]">
+        <div class="max-w-[90%] mx-auto py-12">
+            <div class="flex gap-4 flex-col md:flex-row md:gap-0 justify-around items-center">
+                <a href="{{ siteUrl }}" class="">
+                    <img class="w-36" width="40" height="40" src="{{logo.logo.one().url}}" alt="Logo">
+                </a>
+                <div class="text-white footer-tekst text-center md:text-left">
+                    {{ footer.footertekst }}
+                </div>
+                <div class="text-white footer-tekst text-center md:text-left">
+                    {{ footer.footerTekst2 }}
+                </div>
+                <div class="flex gap-4">
+                    {% for social in socials %}
+                        <div>
+                            <a target="_blank" href="{{social.linkto}}"><img class="w-[2rem]" src="{{social.socialicon.one().url}}" alt=""></a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[90%] mx-auto py-4">
+        <p class="text-[10px] md:text-base">Made by Mauro Coone - &copy; 2024 {{siteName}}</p>
+    </div>
+</footer>

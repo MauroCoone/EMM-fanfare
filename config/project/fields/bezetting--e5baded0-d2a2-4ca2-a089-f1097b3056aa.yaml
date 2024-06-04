@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: bezetting
+instructions: null
+name: Bezetting
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 06595393-c285-47be-9059-df3d3443ae71 # Instrument groep
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

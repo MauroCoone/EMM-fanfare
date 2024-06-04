@@ -1,0 +1,51 @@
+{% set ticketQuery = craft.entries().section('ticketslink') %}
+{% set ticket = ticketQuery.one() %}
+<main class="pt-[8rem] md:py-[8rem] {{entry.title}} relative overflow-x-hidden">
+    <svg class="absolute top-0 right-[-1px] w-[21%] md:w-[45%] scale-x-[-1] z-[-10]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+        <defs>
+            <style>
+            .cls-1 { fill: #d9d7af; stroke-width: 0px; }
+            </style>
+        </defs>
+        <g id="Calque_1">
+            <path class="cls-1" d="M346,0S320.43,235.55,0,267.13C-.67,176.76,229.67.33,346,0Z" style="fill: #d9d7af;"/>
+            <polyline class="cls-1" points="4 0 346.25 0 0 267.13 0 0" style="fill: #d9d7af;"/>
+        </g>
+    </svg>
+    <section class="w-[85%] md:w-[75%] mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-[100%] md:w-[70%]">
+                <div class="next-title relative">
+                    {{entry.bovenstetitels | markdown}}
+                </div>
+                <div class="pt-[7rem] md:pt-0 md:mt-[10rem] w-full md:w-[80%]">
+                    {{entry.textevenement | markdown}}
+                    <div class="w-[60%] mt-4 md:hidden">
+                        <img class="w-[100%] komende-evenement" src="{{entry.recentevenement.one().url}}" alt="recent event">
+                    </div>
+                    <a href="{{ticket.ticketurl}}" target="_blank"><button class="button mt-[2rem]">{{entry.knoptext}}</button></a>
+                </div>
+            </div>
+            <div class="w-[30%] hidden md:block">
+                <img class="w-[100%] komende-evenement" src="{{entry.recentevenement.one().url}}" alt="recent event">
+            </div>
+        </div>
+    </section>
+    <article class="w-[85%] md:w-[75%] mt-[2rem] md:mt-[5rem] mx-auto">
+        <div class="next-title relative">
+            {{entry.onderstetitels | markdown}}
+        </div>
+        <div class="md:grid gap-12 grid-cols-3 pt-[7rem] md:pt-[10rem]">
+            {% for afgelopen in entry.afgelopenevenementen %}
+                <div class="evenement pb-[3rem] md:pb-0">
+                    <img class="w-full" src="{{afgelopen.afgelopenevenementimage.one().url}}" alt="{{afgelopen.title}} image">
+                    <div class="evenement-info w-[90%] mx-auto mt-4">
+                        <h3 class="text-[#00ad93] font-black">{{afgelopen.title}}</h3>
+                        <p>{{afgelopen.textevenement}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </article>
+</main>
+    

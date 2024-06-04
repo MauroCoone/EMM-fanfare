@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: cards
+instructions: null
+name: Kaarten
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - d51ade79-15c6-469e-897e-e40067da42dd # Kaarten homepagina
+  includeTableView: false
+  maxEntries: 4
+  minEntries: 4
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

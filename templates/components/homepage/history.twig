@@ -1,8 +1,8 @@
-<section class="lg:grid grid-cols-2 m-auto">
-    <div>
+<section class="lg:grid grid-cols-2 m-auto overflow-x-hidden">
+    <div class="fade-in-left">
         <img class="h-[50vh] md:h-[70vh] lg:h-full w-full object-cover lozad" height="500" width="100%" data-src="{{home.geschiedenisfoto.one().url}}" alt="geschiedenis foto">
     </div>
-    <div class="relative overflow-hidden h-[70vh] lg:h-full underlineHoverEffect flex items-center justify-center hoverTrigger">
+    <div class="relative fade-in-right overflow-hidden h-[70vh] lg:h-full underlineHoverEffect flex items-center justify-center hoverTrigger">
         <svg class="absolute top-0 right-0 w-[35%] z-[-10] transition-all duration-1000" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 270.13"><defs><style>.cls-1{fill:#f3f1c9;stroke-width:0px;}</style></defs><g id="Calque_1"><path class="cls-1" d="M0,0s26.57,238.78,347,270.13L344.29,0H0Z"/></g></svg>
         <div class="w-[80%] lg:w-[65%] home-history">
             {{ home.geschiedenistekst|raw }}

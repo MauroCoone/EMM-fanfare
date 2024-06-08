@@ -3,27 +3,65 @@
 </div>
 <main class="{{entry.title}}">
     <section>
-        <div id="bezetting" class="w-[80%] mx-auto py-[4rem]">
-            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Bezetting</h1>
-            <div class="grid grid-cols-6">
-                {% for muziekgroup in entry.bezetting %}
-                    <div style="cursor: url('{{ muziekgroup.cursorimage.one().url }}'), auto;">
-                        <h3>{{ muziekgroup.title }}</h3>
-                        {{ muziekgroup.muzikanten | markdown }}
+        <div  class="bg-[#8f8d77] relative overflow-x-hidden">
+            <svg class="absolute top-0 right-0 w-[30%] lg:w-[15%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+                <defs>
+                    <style>
+                    .cls-1 { fill: #fff; stroke-width: 0px; }
+                    </style>
+                </defs>
+                <g id="Calque_1">
+                    <path class="cls-1" d="M346,0S320.43,235.55,0,267.13C-.67,176.76,229.67.33,346,0Z" style="fill: #ffffff;"/>
+                    <polyline class="cls-1" points="4 0 346.25 0 0 267.13 0 0" style="fill: #ffffff;"/>
+                </g>
+            </svg>
+            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] hidden md:block">
+                <h1 class="text-[2.5rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
+                <section class="horizonal__scroll max-w-[100vw] z-[-200] mb-[2rem]">
+                    <div data-animation='horizontal-scroll'>
+                        <ul class="horizonal__scroll__list">
+                            {% for muziekgroup in entry.bezetting %}
+                                <li class="list__item py-4">
+                                    <h3>{{ muziekgroup.title }}</h3>
+                                    {{ muziekgroup.muzikanten | markdown }}
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </div>
-                {% endfor %}
+                </section>
+            </div>
+            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] md:hidden">
+                <h1 class="text-[2.5rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
+                <section class="horizonal__scroll max-w-[100vw] z-[-200] mb-[2rem]">
+                    <div>
+                        <ul class="horizonal__scroll__list flex-col">
+                            {% for muziekgroup in entry.bezetting %}
+                                <li class="list__item py-4 bezettingtekst">
+                                    <h3>{{ muziekgroup.title }}</h3>
+                                    {{ muziekgroup.muzikanten | markdown }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
     
         <div id="jeugd" class="w-[80%] mx-auto py-[4rem]">
-            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Jeugdopleiding</h1>
+            <h1 class="text-[2.5rem] lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Jeugdopleiding</h1>
+            {{entry.jeugdopleidingTekst | markdown}}
+            <div class="md:grid grid-cols-2 h-[60vh] md:h-[50vh]">
+                {% for jeugd in entry.jeugdimages %}
+                    <div class="jeugd-image w-[100%] mt-[2rem] h-[30vh] md:h-full" style="background-image: url('{{ jeugd.url }}'); background-size: cover; background-position: top;"></div>
+                {% endfor %}
+            </div>
         </div>
     
-        <div id="dirigent" class="grid dirigent">
-            <div class="bg-cover bg-left lozad2" data-background-image="{{ entry.dirigentimage.one().url }}"></div>
+        <div id="dirigent" class="md:grid dirigent md:mt-[4rem]">
+            <div class="bg-cover bg-left lozad2 h-[70vh] md:h-auto" data-background-image="{{ entry.dirigentimage.one().url }}"></div>
 
-            <div class="bg-[#8f8d77] relative overflow-x-hidden dirigenttekst p-32">
-                <svg class="absolute top-0 right-[-1px] w-[25%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+            <div class="bg-[#8f8d77] relative overflow-x-hidden dirigenttekst p-[3rem] md:p-32">
+                <svg class="absolute top-0 right-[-1px] w-[35%] md:w-[25%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
                     <defs>
                         <style>
                         .cls-1 { fill: #fff; stroke-width: 0px; }
@@ -39,8 +77,8 @@
         </div>
     
         <div id="bestuur"  class="w-[80%] mx-auto py-[4rem]">
-            <h1 class="text-[4rem] font-black text-[#797D17] mb-[1rem]">Bestuur</h1>
-            <div class="w-[65%]">
+            <h1 class="text-[2.5rem] lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Bestuur</h1>
+            <div class="md:w-[65%]">
                 {{entry.bestuurTekst | markdown}}
             </div>
             <div class="bestuursleden mt-[2rem]">

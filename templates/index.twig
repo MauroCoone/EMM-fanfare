@@ -14,11 +14,21 @@
     <script crossorigin="anonymous"
         src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign%2CIntersectionObserver"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>  
+    <script src="/assets/js/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/ScrollToPlugin.min.js"></script>
 </head>
 {% set cursorQuery = craft.entries().section('cursor') %}
 {% set cursor = cursorQuery.one() %}
-{% set home = craft.entries().section('homepagina')%}
+{% set home = craft.entries().section('homepagina') %}
 <body>
+    <div class="loading__screen">
+        <div class="loading__screen__container">
+            <video class="loading__screen__logo" width="320" height="240" autoplay loop muted>
+                <source src="/assets/images/logo-animation.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
     {% include 'partials/navigation.twig' %}
     <main>
         {% for home in home %} 
@@ -31,8 +41,13 @@
     </main>
     {% include 'partials/footer.twig' %}
     
+    
+    <script src="/assets/js/animations/loading.js"></script>
+    <script src="/assets/js/animations/fade-in.js"></script>
+    <script src="/assets/js/animations/fade-in-left.js"></script>
+    <script src="/assets/js/animations/fade-in-right.js"></script>
 </body>
-<script type="module" src="/assets/js/animations/fade-in.js"></script>
 <script src="/assets/js/lozad.js"></script>
+<script src="/assets/js/carousel.js"></script>
 <script src="/assets/js/navigation.js"></script>
 </html>

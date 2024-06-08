@@ -1,4 +1,4 @@
-dateModified: 1717406852
+dateModified: 1717693329
 email:
   fromEmail: info@emmlot.be
   fromName: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot'
@@ -43,6 +43,7 @@ meta:
     3645e0f1-7149-4035-a3db-cb86fab2c6cc: Paginas # Paginas
     4798bc58-f677-4549-b35d-f1a7fee8deba: 'Footer tekst' # Footer tekst
     18373c82-6759-479d-8909-caa5bdd4916a: 'Tickets link' # Tickets link
+    22245efb-cd36-4f97-bbbb-2442ae46fc5b: 'Jeugdopleiding tekst' # Jeugdopleiding tekst
     53257de7-969b-402f-9802-1570284a1b8b: Bestuursleden # Bestuursleden
     99240c53-fb69-434f-9c5e-f453580c417b: 'Description Website' # Description Website
     548882c7-bab2-46dd-a368-a9fe271ae2d5: 'Geschiedenis foto' # Geschiedenis foto
@@ -70,9 +71,10 @@ meta:
     de41708c-ab65-4b8a-991c-4dda98dcdede: 'Afgelopen evenementen' # Afgelopen evenementen
     e0e05ed4-b1f3-433b-b271-7acef540b745: 'Recent evenement' # Recent evenement
     e5baded0-d2a2-4ca2-a089-f1097b3056aa: Bezetting # Bezetting
+    e55f9967-7bf6-4b95-8ca2-6e65e8feed6a: 'Jeugd images' # Jeugd images
     ebd64a95-a672-4ceb-8d72-628aac700086: Logo # Logo
     eee71030-ea87-44f5-a5d6-9e9e3c88a830: footer # footer
-    ef83e8ca-673a-4d40-9677-fdb0e9157a18: Orkest # Orkest
+    ef83e8ca-673a-4d40-9677-fdb0e9157a18: jeugdOrkest # jeugdOrkest
     f0fa2e1e-f15d-4d67-b946-e737c125f4da: 'Home pagina' # Home pagina
     f7896984-6562-48f9-b926-54bcf7006ea4: Intro # Intro
     fb475c95-4a0f-4199-9d19-b88c9f747571: 'Onderste titels' # Onderste titels

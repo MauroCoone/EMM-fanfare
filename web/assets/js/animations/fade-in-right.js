@@ -1,17 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
-const $trigger = document.querySelectorAll('.fade-up');
-gsap.set($trigger, {y: 100, opacity: 0, scale: 1.3});
+const $el = document.querySelectorAll('.fade-in-right');
+gsap.set($el, {x: 100, opacity: 0});
 
-$trigger.forEach(($element) => {
+$el.forEach(($element) => {
     gsap.to($element, {
-        y: 0,
+        x: 0,
         opacity: 1,
-        scale: 1,
-        stagger: 0.4,
+        stagger: 0.2,
         duration: 0.7,
         scrollTrigger: {
             trigger: $element,
-            start: 'top 90%', // Adjust this value to start the animation earlier
+            start: 'top 80%', // Adjust this value to start the animation earlier
             end: 'bottom bottom',
             toggleActions: 'play none none none' // Adjust this property to reset the animation on leaving the viewport
         }

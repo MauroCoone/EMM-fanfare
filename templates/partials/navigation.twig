@@ -12,8 +12,8 @@ level: 1,
 {% set pages = pagesQuery.all() %}
 
 <div class="w-full">
-    <div class="bg-[#797D17] py-2 md:py-4">
-        <ul class="flex justify-between max-w-[90%] md:max-w-[80%] mx-auto">
+    <div class="bg-[#797D17] py-2 lg:py-4">
+        <ul class="flex justify-between max-w-[90%] lg:max-w-[80%] mx-auto">
             <p class="text-white text-xs md:text-base">{{siteName}}</p>
             <div class="flex gap-4">
                 {% for social in socials %}
@@ -29,8 +29,8 @@ level: 1,
         <div class="progress-container hidden lg:block">
             <div id="progress-bar"></div>
         </div>
-        <div class="bg-white flex flex-row-reverse md:flex-row items-center w-[90%] md:w-[80%] mx-auto justify-between md:stickyBar">
-            <div class="lg:hidden">
+        <div class="bg-white flex flex-row-reverse md:flex-row items-center w-[90%] lg:w-[80%] mx-auto justify-between md:stickyBar">
+            <div class="md:hidden {% if entry.slug == 'orkest' %} {% endif %}">
                 <!-- Hamburger Icon for Mobile -->
                 <button id="mobileMenuButton" class="text-gray-800 focus:outline-none"
                     aria-label="Hamburger Navigation">
@@ -41,13 +41,13 @@ level: 1,
                     </svg>
                 </button>
             </div>
-            <nav class="md:flex items-center gap-20 md:max-w-[90%] py-4">
+            <nav class="md:flex items-center md:gap-12 lg:gap-20 md:max-w-[90%] py-4">
                 <!-- Logo -->
                 <a href="{{ siteUrl }}" class="flex-shrink-0">
                     <img class="w-20" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
                 </a>
                 <!-- Left Navigation -->
-                <ul class="md:flex items-center space-x-16 pageitems hidden md:block">
+                <ul class="md:flex items-center md:gap-8 lg:space-x-16 pageitems hidden md:block">
                     {% for page in pages %}
                     <li><a href="{{ page.url }}" class="">{{ page.title }}</a></li>
                     {% endfor %}

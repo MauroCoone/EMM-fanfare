@@ -36,6 +36,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 90c075c4-e914-4ea5-b975-317ccc5e84c2 # Banner image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a87b9ff7-38c2-4e84-b72d-f01ee2702dc6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: e5baded0-d2a2-4ca2-a089-f1097b3056aa # Bezetting
             handle: null
             includeInCards: false
@@ -51,7 +66,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 90c075c4-e914-4ea5-b975-317ccc5e84c2 # Banner image
+            fieldUid: 22245efb-cd36-4f97-bbbb-2442ae46fc5b # Jeugdopleiding tekst
             handle: null
             includeInCards: false
             instructions: null
@@ -60,7 +75,22 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a87b9ff7-38c2-4e84-b72d-f01ee2702dc6
+            uid: bba7b262-cbfc-43cc-9579-7c1e334599d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e55f9967-7bf6-4b95-8ca2-6e65e8feed6a # Jeugd images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23cdc326-6f16-4f8f-af64-fb9b6be41a79
             userCondition: null
             warning: null
             width: 100
@@ -130,7 +160,7 @@ fieldLayouts:
 handle: orkest
 hasTitleField: true
 icon: files
-name: Orkest
+name: jeugdOrkest
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

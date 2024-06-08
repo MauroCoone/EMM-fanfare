@@ -142,7 +142,7 @@ nav ul li a:hover{
     margin-bottom: 1rem;
     font-size: 24px;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .intro h1{
         font-size: 30px;
         margin-bottom: 2rem;
@@ -153,7 +153,7 @@ nav ul li a:hover{
     font-size: 12px;
     line-height: 2;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .intro p {
         font-size: 14px;
         line-height: 1.8;
@@ -191,6 +191,12 @@ nav ul li a:hover{
     color: #d9d7af;
 }
 @media (min-width: 768px){
+    .grid2fr3fr{
+        grid-template-columns: 2fr 3fr;
+    
+    }
+}
+@media (min-width: 768px){
     .next-title h1:first-child{
         font-size: 5.5rem;
     }
@@ -209,6 +215,15 @@ nav ul li a:hover{
     right: -15%;
     animation: pulsate 2s infinite;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ticket-animated-div {
+        height: 3rem;
+        width: 3rem;
+        right: -11%;
+        font-size: 10px;
+    }
+}
+
 @keyframes pulsate {
     0% {
         transform: scale(1);
@@ -279,7 +294,7 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     .carousel-container{
         max-width: 80%;
     }
@@ -332,11 +347,18 @@ nav ul li a:hover{
 .bestuursleden{
     width: 100%;
     display: flex;
-    height: 500px;
+    flex-direction: column;
     gap: 10px;
 }
+@media (min-width: 768px){
+    .bestuursleden{
+        flex-direction: row;
+        height: 500px;
+    }
+
+}
 .bestuur-card{
-    flex: 0 0 150px;
+    flex: 0 0 450px;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -344,10 +366,23 @@ nav ul li a:hover{
     position: relative;
     overflow: hidden;
 }
-.bestuur-card:hover{
-    flex: 0 0 400px;
-    box-shadow: 1px 3px 15px #00ad93;
-    // transform: translatey(-30px);
+@media (min-width: 768px){
+    .bestuur-card{
+        flex: 0 0 150px;
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px #1e0e3e;
+        position: relative;
+        overflow: hidden;
+    }
+}
+@media (min-width: 768px){
+    .bestuur-card:hover{
+        flex: 0 0 400px;
+        box-shadow: 1px 3px 15px #00ad93;
+        // transform: translatey(-30px);
+    }
 }
 .bestuur-card div{
     font-size: 1.5rem;
@@ -355,7 +390,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     padding: 15px;
-    opacity: 0;
+    opacity: 1;
     flex-direction: column;
     height: 100%;
     justify-content: flex-end;
@@ -365,22 +400,43 @@ nav ul li a:hover{
         rgba(2, 2, 46, 0.6755077030812324) 0%,
         rgba(255, 255, 255, 0) 100%
     );
-    transform: translatey(100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-    visibility: hidden;
-}
-.bestuur-card:hover div{
-    opacity: 1;
     transform: translatey(0%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
     visibility: visible;
+}
+@media (min-width: 768px){
+    .bestuur-card div{
+        opacity: 0;
+        transform: translatey(100%);
+        visibility: hidden;
+    }
+}
+@media (min-width: 768px){
+    .bestuur-card:hover div{
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+    }
 }
 .dirigent{
     grid-template-columns: 1fr 2fr;
-    height: 80vh;
+    height: 140vh;
+}
+@media (min-width: 768px){
+    .dirigent{
+        height: 80vh;
+    }
+
 }
 .dirigenttekst p{
     color: white;
-    width: 85%;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .dirigenttekst p{
+        width: 85%;
+    }
+
 }
 .dirigenttekst h2{
     color: #d9d7af;
@@ -433,4 +489,66 @@ main .freeform-form button:hover {
 .front, .overlay{transition: 0.35s;}
 .front:hover .overlay{
     opacity: 0.15;
+}
+
+
+.loading__screen{
+    background-color: #00C9AF;
+    color: white;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.loading__screen div{
+    overflow: hidden;
+}
+.loading__screen div h1{
+    font-size: 5rem;
+}
+
+
+
+/* Horizontal scroll */
+.horizonal__scroll{
+    max-width: 100vw;
+    z-index: -200;
+    margin-bottom: 2rem;
+    & div {
+        position: relative;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+}
+.horizonal__scroll__list{
+    display: flex;
+    gap: 3rem;
+    
+    
+    & li{
+        list-style: none;
+        text-align: center;
+        border: 2px solid #d9d7af;
+        & h3{
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        & p {
+            font-size: 1rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            width: 16rem;
+            color: #d9d7af;
+        }
+    }
+}
+.horizonal__scroll div .horizonal__scroll__list .bezettingtekst p{
+    width: 100%;
 }

@@ -1,6 +1,6 @@
-color: red
+color: violet
 fieldLayouts:
-  98597005-a96a-436b-8524-f30e55d2d702:
+  0a152b0d-d094-401f-927a-6d9775b3bdca:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 7d6237b8-47c9-4a14-8bf1-97799a964d84
+            uid: aed9cbe0-21b3-427a-b62d-fb1ce1fc49bd
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 90c075c4-e914-4ea5-b975-317ccc5e84c2 # Banner image
+            fieldUid: 548882c7-bab2-46dd-a368-a9fe271ae2d5 # Geschiedenis foto
             handle: null
             includeInCards: false
             instructions: null
@@ -45,13 +45,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3cba83db-bc2e-4d58-a290-99fedf05e0b8
+            uid: ea456f26-0fa9-41e2-bd59-5e306119b774
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: f7896984-6562-48f9-b926-54bcf7006ea4 # Intro
+            fieldUid: 1cd5fb98-c27f-4926-96b3-eba8227130b9 # Geschiedenis Tekst
             handle: null
             includeInCards: false
             instructions: null
@@ -60,47 +60,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 90b1aed9-67d9-4d83-baf3-2b78b929ee89
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: c8aad853-b24b-42b9-9e16-3451b70c63c6 # Geschiedenis secties
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 96404e88-2cc0-44de-9217-ffd4c03e8cd4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: c170927e-fa94-443f-9d09-c1a27a387af7 # Oud dirigenten
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ebe77d6e-d3cb-4137-bde3-bd8823c7d0c6
+            uid: 2f473574-020f-4604-a894-c1b180fc74e0
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: e37902f6-4d85-4f51-a099-60ea37f38c63
+        uid: 2b36b9c0-e244-459d-99ab-3fbe2340803a
         userCondition: null
-handle: geschiedenis
+handle: geschiedenissectie
 hasTitleField: true
-icon: files
-name: Geschiedenis
+icon: timeline
+name: 'Geschiedenis sectie'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

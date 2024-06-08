@@ -1,4 +1,4 @@
-dateModified: 1717693329
+dateModified: 1717860653
 email:
   fromEmail: info@emmlot.be
   fromName: 'Koninklijke Fanfare <<Eendracht Maakt Macht>> Lot'
@@ -36,6 +36,7 @@ meta:
     9d612026-666a-4011-8fd9-d8ce7f7cfa43: Achtergrond # Achtergrond
     9f26738d-9410-4421-914c-164677f26d79: Socials # Socials
     33bfc5d4-013d-400e-a3cd-89ca0c0b689a: Contact # Contact
+    42b43c9e-0d42-4658-9374-6a5f456aa59a: 'oud dirigent' # oud dirigent
     88ac16c0-76ee-4619-8421-245fb477826c: Socials # Socials
     90c075c4-e914-4ea5-b975-317ccc5e84c2: 'Banner image' # Banner image
     222a8d04-a23d-4029-bf3b-80d35c18bb0f: Bestuurslid # Bestuurslid
@@ -55,14 +56,18 @@ meta:
     a0ca3ac9-b2a3-47de-b21b-4d89e4eb5db5: 'Bovenste Titels ' # Bovenste Titels 
     a8a462b8-0154-404c-a718-fa2a7b9aabf1: 'Functie en instrument' # Functie en instrument
     a538afc2-d482-4266-9443-24af339ce56a: 'Description Website' # Description Website
+    a3123bf3-4f17-4255-8e27-f57d79afc73a: 'Geschiedenis sectie' # Geschiedenis sectie
     a6314a77-2f3a-4658-9c56-690f7c8e0967: 'Bestuurslid foto' # Bestuurslid foto
     a138341f-504d-4ea1-bdab-095eb8cf3d0e: 'Dirigent image' # Dirigent image
     aa668fda-6672-4ed8-a859-402420cf46ba: Geschiedenis # Geschiedenis
+    ab263836-9337-46e0-8d10-e16fcec9d30f: Periode # Periode
     b938d7f2-ac2b-49f5-8724-1a02a9076082: 'Afgelopen evenement image' # Afgelopen evenement image
     b6926996-153e-418e-acfe-4c395d96767a: footer # footer
     bf48323a-65f1-4525-b819-f8291368811f: 'Afgelopen evenementen' # Afgelopen evenementen
+    c8aad853-b24b-42b9-9e16-3451b70c63c6: 'Geschiedenis secties' # Geschiedenis secties
     c76b8343-2746-463c-9d98-e38c51c2b9f7: Logo # Logo
     c88aa507-637d-4c7e-b148-18811b748966: 'Cursor image' # Cursor image
+    c170927e-fa94-443f-9d09-c1a27a387af7: 'Oud dirigenten' # Oud dirigenten
     caf76a92-871e-492f-ac7d-4946d0f7fb35: 'Contact titel' # Contact titel
     d51ade79-15c6-469e-897e-e40067da42dd: 'Kaarten homepagina' # Kaarten homepagina
     d746d420-d41d-489a-b942-2ef796268c28: Muzikanten # Muzikanten

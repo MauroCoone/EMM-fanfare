@@ -1,6 +1,55 @@
 <div class="mt-[5rem]">
     {% include 'components/pages/components/header'%}
 </div>
-<main class="{{entry.title}}">
-    
+<main class="{{entry.title}} relative overflow-hidden">
+    <svg class="absolute top-0 right-[-1px] w-[21%] md:w-[20%] scale-x-[-1] z-[-10]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+        <defs>
+            <style>
+            .cls-1 { fill: #d9d7af; stroke-width: 0px; }
+            </style>
+        </defs>
+        <g id="Calque_1">
+            <path class="cls-1" d="M346,0S320.43,235.55,0,267.13C-.67,176.76,229.67.33,346,0Z" style="fill: #d9d7af;"/>
+            <polyline class="cls-1" points="4 0 346.25 0 0 267.13 0 0" style="fill: #d9d7af;"/>
+        </g>
+    </svg>
+    <div class="w-[85%] md:w-[75%] mx-auto">
+        <div class="text-center mt-[3rem] w-[80%] mx-auto">{{entry.intro}}</div>
+    </div>
+    <hr class="history-line">
+    <div class="mb-[4rem]">
+        {% for history in entry.geschiedenissecties %}
+            {% if loop.index is odd %}
+                <div class="fade-up grid grid-cols-2 justify-items-center relative mt-[10rem] gap-8 w-[80%] md:w-[80%] mx-auto">
+                    <div class="w-[100%] px-[10%] h-[50vh]">
+                        <img class="h-full w-full object-cover" src="{{history.geschiedenisfoto.one().url}}" alt="{{history.title}} image">
+                    </div>
+                    <div class="absolute h-[2rem] w-[2rem] rounded-full bg-[#00C9AF]"></div>
+                    <div class="px-[10%]">
+                        <h3 class="text-[#00ad93] text-4xl mb-[1rem]">{{history.title}}</h3>
+                        <div class="">{{history.geschiedenistekst}}</div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if loop.index is even %}
+                <div class="fade-up grid grid-cols-2 justify-items-center relative mt-[10rem] gap-8 w-[80%] md:w-[80%] mx-auto">
+                    <div class="px-[10%]">
+                        <h3 class="text-[#00ad93] text-4xl mb-[1rem]">{{history.title}}</h3>
+                        <div class="">{{history.geschiedenistekst}}</div>
+                    </div>
+                    <div class="absolute h-[2rem] w-[2rem] rounded-full bg-[#00C9AF]"></div>
+                    <div class="w-[100%] px-[10%] h-[50vh]">
+                        <img class="h-full w-full object-cover" src="{{history.geschiedenisfoto.one().url}}" alt="{{history.title}} image">
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 </main>
+
+<section class="history-dirigenten">
+    <div class="w-[85%] md:w-[75%] mx-auto">
+        <h2>De Dirigenten</h2>
+    </div>
+</section>

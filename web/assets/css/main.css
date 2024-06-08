@@ -552,3 +552,16 @@ main .freeform-form button:hover {
 .horizonal__scroll div .horizonal__scroll__list .bezettingtekst p{
     width: 100%;
 }
+
+
+
+.history-line {
+    position: absolute;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 2px;
+    height: 100%;
+    background-color: black; /* Je kunt de kleur aanpassen naar wens */
+    left: 50%; /* Plaatst de lijn in het midden van de container */
+    transform: translateX(-50%); /* Centraal uitlijnen */
+}

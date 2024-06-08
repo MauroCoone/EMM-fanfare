@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: ouddirigenten
+instructions: null
+name: 'Oud dirigenten'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 42b43c9e-0d42-4658-9374-6a5f456aa59a # oud dirigent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

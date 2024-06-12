@@ -6,6 +6,7 @@
     <title>{{ siteName }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="keywords" content="lot,fanfare,emm,eendracht,maakt,macht">
     <meta name="description" content="{{descriptionwebsite.descriptionwebsite | raw}}">
     <link rel="icon" href="{{logo.logo.one().url}}" type="image/x-icon">
 
@@ -22,7 +23,7 @@
 {% set cursor = cursorQuery.one() %}
 {% set home = craft.entries().section('homepagina') %}
 <body>
-    <div class="loading__screen">
+    <div class="hidden md:flex loading__screen">
         <div class="loading__screen__container">
             <video class="loading__screen__logo" width="320" height="240" autoplay loop muted>
                 <source src="/assets/images/logo-animation.mp4" type="video/mp4" />

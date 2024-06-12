@@ -160,7 +160,7 @@ fieldLayouts:
 handle: orkest
 hasTitleField: true
 icon: files
-name: jeugdOrkest
+name: Orkest
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,4 +1,4 @@
-<section class="carouselsection mt-[125vh] h-[60vh] md:h-[65vh] lg:h-[80vh] md:mt-[5vh] lg:mt-[80vh]">
+<section class="carouselsection mt-[125vh] sm:mt-12 h-[60vh] md:h-[65vh] 2xl:h-[80vh] md:mt-[5vh] xl:mt-[15vh]">
     <div class="carousel-container">
         {% for image in entry.imagescarousel %}
             <input type="radio" hidden name="slider" id="item-{{loop.index}}" {% if loop.index == 1 %}checked{% endif %}>

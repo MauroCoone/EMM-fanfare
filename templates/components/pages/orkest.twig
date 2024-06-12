@@ -3,8 +3,8 @@
 </div>
 <main class="{{entry.title}}">
     <section>
-        <div  class="bg-[#8f8d77] relative overflow-x-hidden">
-            <svg class="absolute top-0 right-0 w-[30%] lg:w-[15%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+        <div  class="bg-[#8f8d77] relative">
+            <svg class="absolute top-0 right-0 w-[30%] lg:w-[25%] xl:w-[15%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
                 <defs>
                     <style>
                     .cls-1 { fill: #fff; stroke-width: 0px; }
@@ -15,10 +15,10 @@
                     <polyline class="cls-1" points="4 0 346.25 0 0 267.13 0 0" style="fill: #ffffff;"/>
                 </g>
             </svg>
-            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] hidden md:block">
-                <h1 class="text-[2.5rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
+            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] hidden xl:block">
+                <h1 class="text-[2rem] md:text-[3rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
                 <section class="horizonal__scroll max-w-[100vw] z-[-200] mb-[2rem]">
-                    <div data-animation='horizontal-scroll'>
+                    <div class="horizontal-scroll" data-animation='horizontal-scroll'>
                         <ul class="horizonal__scroll__list">
                             {% for muziekgroup in entry.bezetting %}
                                 <li class="list__item py-4">
@@ -30,11 +30,11 @@
                     </div>
                 </section>
             </div>
-            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] md:hidden">
-                <h1 class="text-[2.5rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
-                <section class="horizonal__scroll max-w-[100vw] z-[-200] mb-[2rem]">
+            <div id="bezetting" class="w-[80%] mx-auto py-[4rem] xl:hidden">
+                <h1 class="text-[2rem] md:text-[3rem] lg:text-[4rem] text-[#d9d7af] mb-[2.1rem]">Bezetting</h1>
+                <section class="horizonal__scroll max-w-[100vw]  z-[-200] mb-[2rem]">
                     <div>
-                        <ul class="horizonal__scroll__list flex-col">
+                        <ul class="horizonal__scroll__list flex-col md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-[1rem]">
                             {% for muziekgroup in entry.bezetting %}
                                 <li class="list__item py-4 bezettingtekst">
                                     <h3>{{ muziekgroup.title }}</h3>
@@ -48,11 +48,11 @@
         </div>
     
         <div id="jeugd" class="w-[80%] mx-auto py-[4rem]">
-            <h1 class="text-[2.5rem] lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Jeugdopleiding</h1>
+            <h1 class="text-[2rem] md:text-[3rem] lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Jeugdopleiding</h1>
             {{entry.jeugdopleidingTekst | markdown}}
-            <div class="md:grid grid-cols-2 h-[60vh]">
+            <div class="lg:grid grid-cols-2 h-[60vh] sm:h-[90vh] md:h-[110vh] lg:h-[50vh]">
                 {% for jeugd in entry.jeugdimages %}
-                    <div class="jeugd-image w-[100%] mt-[2rem] h-[30vh] md:h-full" style="background-image: url('{{ jeugd.url }}'); background-size: cover; background-position: top;"></div>
+                    <div class="jeugd-image w-[100%] mt-[2rem] h-[30vh] sm:h-[45vh] md:h-[55vh] lg:h-full" style="background-image: url('{{ jeugd.url }}'); background-size: cover; background-position: top;"></div>
                 {% endfor %}
             </div>
         </div>
@@ -60,8 +60,8 @@
         <div id="dirigent" class="md:grid dirigent md:mt-[4rem]">
             <div class="bg-cover bg-left lozad2 h-[70vh] md:h-auto" data-background-image="{{ entry.dirigentimage.one().url }}"></div>
 
-            <div class="bg-[#8f8d77] relative overflow-x-hidden dirigenttekst p-[3rem] md:p-32">
-                <svg class="absolute top-0 right-[-1px] w-[35%] md:w-[25%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
+            <div class="bg-[#8f8d77] relative overflow-x-hidden dirigenttekst p-[3rem] sm:py-[5rem] lg:p-24 xl:p-32">
+                <svg class="absolute top-0 right-[-1px] w-[35%] sm:w-[25%] scale-x-[-1]" id="Laag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346.25 267.13">
                     <defs>
                         <style>
                         .cls-1 { fill: #fff; stroke-width: 0px; }
@@ -76,17 +76,17 @@
             </div>
         </div>
     
-        <div id="bestuur"  class="w-[80%] mx-auto py-[4rem]">
-            <h1 class="text-[2.5rem] lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Bestuur</h1>
-            <div class="md:w-[65%]">
+        <div id="bestuur"  class="w-[90%] lg:w-[80%] mx-auto py-[5rem] sm:py-0 sm:pb-[3rem] md:mt-[3rem]">
+            <h1 class="text-[2rem] md:text-[3rem] w-[90%] mx-auto md:w-full lg:text-[4rem] font-black text-[#797D17] mb-[1rem]">Bestuur</h1>
+            <div class="w-[90%] mx-auto md:w-[65%] lg:w-[80%] xl:w-[65%] md:mx-0">
                 {{entry.bestuurTekst | markdown}}
             </div>
-            <div class="bestuursleden mt-[2rem]">
+            <div class="bestuursleden sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:flex mt-[2rem]">
                 {% for lid in entry.bestuursleden %}
-                    <div class="bestuur-card inset-0 bg-cover bg-center lozad2" data-background-image="{{ lid.bestuurslidfoto.one().url }}" style="z-index: 2;">
+                    <div class="bestuur-card sm:h-[60vh] 2xl:h-auto inset-0 bg-cover bg-center lozad2" data-background-image="{{ lid.bestuurslidfoto.one().url }}" style="z-index: 2;">
                         <div>
-                            <h2 class="font-bold">{{lid.title}}</h2>
-                            <p class="text-[18px]">{{lid.functieeninstrument}}</p>
+                            <h2 class="font-bold text-center">{{lid.title}}</h2>
+                            <p class="text-[18px] text-center">{{lid.functieeninstrument}}</p>
                         </div>
                     </div>
                 {% endfor %}

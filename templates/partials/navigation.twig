@@ -13,7 +13,7 @@ level: 1,
 
 <div class="w-full">
     <div class="bg-[#797D17] py-2 lg:py-4">
-        <ul class="flex justify-between max-w-[90%] lg:max-w-[80%] mx-auto">
+        <ul class="flex justify-between items-center max-w-[90%] xl:max-w-[80%] mx-auto">
             <p class="text-white text-xs md:text-base">{{siteName}}</p>
             <div class="flex gap-4">
                 {% for social in socials %}
@@ -25,11 +25,11 @@ level: 1,
             </div>
         </ul>
     </div>
-    <div id="navigationBar" class="fixed w-full top-0 mt-[7vh]">
-        <div class="progress-container hidden lg:block">
+    <div id="navigationBar" class="fixed w-full top-0 mt-[7vh] md:mt-[5vh] lg:mt-[7vh]">
+        <div class="progress-container hidden md:block">
             <div id="progress-bar"></div>
         </div>
-        <div class="bg-white flex flex-row-reverse md:flex-row items-center w-[90%] lg:w-[80%] mx-auto justify-between md:stickyBar">
+        <div class="bg-white flex flex-row-reverse md:flex-row items-center w-[90%] xl:w-[80%] mx-auto justify-between md:stickyBar">
             <div class="md:hidden {% if entry.slug == 'orkest' %} {% endif %}">
                 <!-- Hamburger Icon for Mobile -->
                 <button id="mobileMenuButton" class="text-gray-800 focus:outline-none"
@@ -41,13 +41,13 @@ level: 1,
                     </svg>
                 </button>
             </div>
-            <nav class="md:flex items-center md:gap-12 lg:gap-20 md:max-w-[90%] py-4">
+            <nav class="md:flex md:justify-between lg:justify-start items-center md:gap-8 lg:gap-12 xl:gap-20 md:max-w-[90%] py-4">
                 <!-- Logo -->
                 <a href="{{ siteUrl }}" class="flex-shrink-0">
-                    <img class="w-20" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
+                    <img class="w-20 navigation_logo" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
                 </a>
                 <!-- Left Navigation -->
-                <ul class="md:flex items-center md:gap-8 lg:space-x-16 pageitems hidden md:block">
+                <ul class="md:flex items-center md:gap-8 lg:gap-12 2xl:space-x-16 pageitems hidden md:block">
                     {% for page in pages %}
                     <li><a href="{{ page.url }}" class="">{{ page.title }}</a></li>
                     {% endfor %}
@@ -67,7 +67,7 @@ level: 1,
         </button>
         <ul class="flex flex-col gap-4 items-center justify-center h-full text-center">
             <a href="{{ siteUrl }}" class="flex-shrink-0 ml-[1rem]">
-                <img class="w-20" width="20" height="20" src="{{logo.logo.one().url}}" alt="Logo">
+                <img class="w-28" width="28" height="28" src="{{logo.logo.one().url}}" alt="Logo">
             </a>
             {% for page in pages %}
                 <li class="{{ page.title }} uppercase mb-4">

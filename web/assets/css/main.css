@@ -596,7 +596,11 @@ main .freeform-form button:hover {
     left: 50%; /* Plaatst de lijn in het midden van de container */
     transform: translateX(-50%); /* Centraal uitlijnen */
 }
-
+@media (min-width: 1536px){
+    .progress-container #progress-bar{
+        height: 5px;
+    }
+}
 
 /* media querie for giant screen */
 @media (min-width: 1800px){
@@ -655,5 +659,85 @@ main .freeform-form button:hover {
     }
     article .next-title + div{
         padding-top: 15rem;
+    }
+    main .carouselsection {
+        height: 70vh;
+    }
+    .horizonal__scroll__list li h3 {
+        font-size: 2.3rem;
+    }
+    #bezetting h1{
+        font-size: 5rem;
+    }
+    header .header-text{
+        font-size: 86px;
+    }
+    .horizonal__scroll__list li p {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        width: 20.6rem;
+        
+    }
+    #jeugd h1{
+        font-size: 5rem;
+    }
+    #jeugd p{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    #dirigent .dirigenttekst h3{
+        font-size: 2.8rem;
+    }
+    #dirigent .dirigenttekst h2{
+        font-size: 5rem;
+    }
+    #dirigent .dirigenttekst p{
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-top: 1rem;
+    }
+    #dirigent{
+        height: 65vh;
+    }
+    #bestuur h1{
+        font-size: 5rem;
+    }
+    #bestuur .bestuur-text{
+        width: 75%;
+    }
+    #bestuur .bestuur-text p{
+        font-size: 1.2rem;
+    }
+    .bestuur-card {
+        flex: 0 0 200px;
+    }
+    #imageModal span{
+        font-size: 5rem;
+        top: 3rem;
+        right: 5rem;
+    }
+    .pageitems li a{
+        font-size: 1.2rem;
+    }
+    .Geschiedenis div .gesc-intro{
+        width: 70%;
+        margin-top: 5rem;
+        font-size: 1.2rem;
+    }
+    .gesch-text{
+        font-size: 1.1rem;
+    }
+    div div .gesch-title{
+        font-size: 3rem;
+    }
+    .history-dirigenten div .oud-dirigenten{
+        font-size: 4rem;
+    }
+    .Contact .stuurbericht{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .evenement-info p {
+        font-size: 16px;
     }
 }

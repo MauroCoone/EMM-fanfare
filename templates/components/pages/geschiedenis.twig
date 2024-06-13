@@ -14,7 +14,7 @@
         </g>
     </svg>
     <div class="w-[90%] lg:w-[75%] mx-auto">
-        <div class="lg:text-center mt-[4rem] sm:mt-[6rem] lg:mt-[3rem] lg:w-[80%] mx-auto">{{entry.intro}}</div>
+        <div class="lg:text-center mt-[4rem] sm:mt-[6rem] gesc-intro lg:mt-[3rem] lg:w-[80%] mx-auto">{{entry.intro}}</div>
     </div>
     <hr class="hidden lg:block history-line">
     <div class="mb-[4rem]">
@@ -26,8 +26,8 @@
                     </div>
                     <div class="hidden lg:block absolute h-[2rem] w-[2rem] rounded-full bg-[#00C9AF]"></div>
                     <div class="lg:pl-[5%] xl:px-[10%] mt-[1rem]">
-                        <h3 class="text-[#00ad93] text-4xl mb-[1rem]">{{history.title}}</h3>
-                        <div class="">{{history.geschiedenistekst}}</div>
+                        <h3 class="text-[#00ad93] text-4xl mb-[1rem] gesch-title">{{history.title}}</h3>
+                        <div class="gesch-text">{{history.geschiedenistekst}}</div>
                     </div>
         </div>
             {% endif %}
@@ -35,8 +35,8 @@
             {% if loop.index is even %}
                 <div class="fade-up lg:grid grid-cols-2 items-center justify-items-center relative mt-[4rem] lg:mt-[10rem] gap-8 w-[90%] xl:w-[80%] mx-auto">
                     <div class="lg:pr-[5%] xl:px-[10%]">
-                        <h3 class="text-[#00ad93] text-4xl mb-[1rem]">{{history.title}}</h3>
-                        <div class="">{{history.geschiedenistekst}}</div>
+                        <h3 class="text-[#00ad93] text-4xl mb-[1rem] gesch-title">{{history.title}}</h3>
+                        <div class="gesch-text">{{history.geschiedenistekst}}</div>
                         </div>
                         <div class="hidden lg:block absolute h-[2rem] w-[2rem] rounded-full bg-[#00C9AF]"></div>
                         <div class="w-[100%] lg:pl-[5%] xl:px-[10%]">
@@ -51,7 +51,7 @@
 
 <section class="history-dirigenten lg:mt-12">
     <div class="w-[85%] lg:w-[90%] xl:w-[75%] mx-auto">
-        <h2 class="text-[2rem] lg:text-[2.5rem] md:text-[3rem] text-[#797D17] mb-[1rem]">Oud dirigenten</h2>
+        <h2 class="text-[2rem] oud-dirigenten lg:text-[2.5rem] md:text-[3rem] text-[#797D17] mb-[1rem]">Oud dirigenten</h2>
         <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-[2rem]">
             {% for ouddirigenten in entry.ouddirigenten %}
                 <div class="mt-[1.5rem] 2xl:mt-auto">

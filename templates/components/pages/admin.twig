@@ -1,0 +1,65 @@
+{# subject: Nieuw bericht in het contact formulier #}
+{# fromEmail: {{ craft.app.projectConfig.get('email.fromEmail') }} #}
+{# fromName: {{ craft.app.projectConfig.get('email.fromName') }} #}
+{# replyToName: {{ naam }} #}
+{# replyToEmail: {{ email }} #}
+{# cc: mauro.coone@gmail.com #}
+{# bcc:  #}
+{# includeAttachments: true #}
+{# presetAssets:  #}
+{# templateName: Admin #}
+{# description: melding admins TEST #}
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Nieuw bericht in de {{ form.name }} form</h2>
+
+<p>Submitted on: {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}</p>
+<ul>
+{% for field in allFields %}
+    <li>
+        {{ field.label }}: 
+        {% if field.implements('options') %}
+            {{ field.labelsAsString }}
+        {% else %}
+            {{ field.valueAsString }}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+{# text #}
+Submitted on: {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}
+
+{% for field in allFields %}
+- {{ field.label }}: {% if field.implements('options') -%}
+        {{- field.labelsAsString }}
+    {%- else -%}
+        {{- field.valueAsString }}
+{% endif %}
+{% endfor %}
+
+
+
+
+
+
+
+{# /text #}

@@ -6,7 +6,7 @@
         <div class="cards">
             {% for image in entry.imagescarousel %}
                 <label class="card" for="item-{{loop.index}}" id="picture-{{loop.index}}">
-                    <img src="{{ image.url }}" alt="">
+                    <img class="lozad" data-src="{{ image.url }}" alt="carousel picture">
                 </label>
             {% endfor %}
         </div>

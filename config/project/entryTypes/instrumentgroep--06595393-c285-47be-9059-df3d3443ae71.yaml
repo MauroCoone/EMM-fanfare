@@ -51,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: c88aa507-637d-4c7e-b148-18811b748966 # Cursor image
+            fieldUid: c88aa507-637d-4c7e-b148-18811b748966
             handle: null
             includeInCards: false
             instructions: null

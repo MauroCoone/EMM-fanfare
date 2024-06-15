@@ -76,7 +76,6 @@ body p, body a{
     color: #00C9AF;
 }
 body {
-    cursor: url('{{ cursor.cursorimage.one().url }}') 8 8, auto; 
     color: #292c07;
 }
 .progress-container {
@@ -365,7 +364,6 @@ nav ul li a:hover{
         flex-direction: row;
         height: 500px;
     }
-
 }
 .bestuur-card{
     flex: 0 0 450px;
@@ -510,8 +508,8 @@ main .freeform-form button:hover {
 
 
 .loading__screen{
-    background-color: #00C9AF;
-    color: white;
+    background-color: #ffffff;
+    color: #00C9AF;
     position: fixed;
     inset: 0;
     width: 100%;

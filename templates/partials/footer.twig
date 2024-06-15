@@ -6,7 +6,7 @@
         <div class="max-w-[90%] mx-auto py-12">
             <div class="flex gap-4 flex-col md:flex-row md:gap-0 justify-around items-center">
                 <a href="{{ siteUrl }}" class="">
-                    <img class="w-36 footer-logo" width="40" height="40" src="{{logo.logo.one().url}}" alt="Logo">
+                    <img class="w-36 footer-logo lozad" width="40" height="40" data-src="{{logo.logo.one().url}}" alt="Logo">
                 </a>
                 <div class="text-white footer-tekst text-center md:text-left">
                     {{ footer.footertekst }}
@@ -17,7 +17,7 @@
                 <div class="flex gap-4">
                     {% for social in socials %}
                         <div>
-                            <a target="_blank" href="{{social.linkto}}"><img class="w-[2rem] footer-icons" src="{{social.socialicon.one().url}}" alt=""></a>
+                            <a target="_blank" href="{{social.linkto}}"><img class="w-[2rem] footer-icons lozad" width="36" height="36" data-src="{{social.socialicon.one().url}}" alt=""></a>
                         </div>
                     {% endfor %}
                 </div>

@@ -21,7 +21,7 @@
                 <div class="pt-[7rem] kom-ev-text md:pt-0 md:mt-[8rem] lg:mt-[10rem] w-full md:w-[80%] fade-up">
                     {{entry.textevenement | markdown}}
                     <div class="w-[60%] mt-4 md:hidden">
-                        <img class="w-[100%] komende-evenement" src="{{entry.recentevenement.one().url}}" alt="recent event">
+                        <img class="w-[100%] komende-evenement lozad" width="40" height="40" data-src="{{entry.recentevenement.one().url}}" alt="recent event">
                     </div>
                     <a href="{{ticket.ticketurl}}" target="_blank"><button class="button mt-[2rem]">{{entry.knoptext}}</button></a>
                 </div>
@@ -38,9 +38,9 @@
         <div class="md:grid gap-12 md:grid-cols-2 lg:grid-cols-3 pt-[7rem] md:pt-[10rem] fade-up">
             {% for afgelopen in entry.afgelopenevenementen %}
                 <div class="evenement pb-[3rem] md:pb-0">
-                    <img class="w-full" src="{{afgelopen.afgelopenevenementimage.one().url}}" alt="{{afgelopen.title}} image">
+                    <img class="w-full lozad" width="40" height="40" data-src="{{afgelopen.afgelopenevenementimage.one().url}}" alt="{{afgelopen.title}} image">
                     <div class="evenement-info w-[90%] mx-auto mt-4">
-                        <h3 class="text-[#00ad93] font-black">{{afgelopen.title}}</h3>
+                        <h2 class="text-[#00ad93] font-black">{{afgelopen.title}}</h2>
                         <p>{{afgelopen.textevenement}}</p>
                     </div>
                 </div>

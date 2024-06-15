@@ -13,17 +13,16 @@ level: 1,
 
 <div class="w-full">
     <div class="bg-[#797D17] py-2 lg:py-4">
-        <ul class="flex justify-between items-center max-w-[90%] xl:max-w-[80%] mx-auto">
+        <div class="flex justify-between items-center max-w-[90%] xl:max-w-[80%] mx-auto">
             <p class="text-white text-xs md:text-base">{{siteName}}</p>
             <div class="flex gap-4">
                 {% for social in socials %}
                 <div>
-                    <a target="_blank" href="{{social.linkto}}"><img class="w-6" src="{{social.socialicon.one().url}}"
-                            alt=""></a>
+                    <a target="_blank" href="{{social.linkto}}" aria-label="vind ons op social media"><img class="w-6" width="6" height="6" src="{{social.socialicon.one().url}}" alt="icoon social media"></a>
                 </div>
                 {% endfor %}
             </div>
-        </ul>
+        </div>
     </div>
     <div id="navigationBar" class="fixed w-full top-0 mt-[7vh] md:mt-[5vh] lg:mt-[7vh]">
         <div class="progress-container 2xl:h-[5px] hidden md:block">
